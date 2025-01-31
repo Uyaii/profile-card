@@ -31,5 +31,5 @@ async function fetchBlogMetadata(blogUrl) {
 
 // Replace with your Hashnode blog URL
 const blogPostUrl =
-  "https://uyaicoding.hashnode.dev/becoming-a-software-engineer";
+  "https://dev.to/maryanne_a076b4d7baacc530/becoming-a-software-developer-45mk";
 fetchBlogMetadata(blogPostUrl);
