@@ -26,10 +26,18 @@ main {
   max-height: max-content;
   max-width: min-content;
   background-color: white;
-  margin: 1.5rem;
+  margin: 1rem;
   border-radius: 10px;
   padding: 1rem;
+  width: max-content;
+  height: max-content;
 }
+
+.about-section {
+  /* display: flex;
+  flex-direction: column; */
+}
+
 .profilePicture {
   max-width: 300px;
   max-height: 300px;
@@ -37,6 +45,21 @@ main {
   float: left;
   margin: 1rem;
   margin-right: 2rem;
+
+  animation: pulse 2s infinite; /* Add the pulsing animation */
+  border: 3px solid rebeccapurple;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rebeccapurple;
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 118, 209, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 118, 209, 0);
+  }
 }
 
 .shortBio,
@@ -44,6 +67,7 @@ main {
 .jobtitle {
   margin-top: 1rem;
 }
+
 .contact-section {
   clear: both;
   /* border: 2px solid rebeccapurple; */
@@ -51,7 +75,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin: 1rem;
   padding: 1rem;
 }
 .socialLinks {
@@ -66,6 +90,9 @@ main {
   padding: 0.5rem;
   border-radius: 10px;
   border: 2px solid rebeccapurple;
+
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 .socialLinks img {
   width: 30px;
@@ -86,6 +113,7 @@ main {
 
   transform: scale(1.2);
   transition: all 0.5s ease-in-out;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 .socialLinks a:hover {
   color: white;
@@ -108,6 +136,43 @@ main {
   transition: all 0.5s ease-in;
 }
 
+.currentLocation {
+  font-size: 20px;
+  margin: 1rem;
+  text-align: center;
+}
+
 footer {
   font-size: 20px;
+}
+
+@media (max-width: 640px) {
+  main {
+    max-width: max-content;
+    height: max-content;
+  }
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .jobtitle {
+    text-align: center;
+  }
+  .shortBio {
+    width: 90%;
+  }
+  .socialLinks h3 {
+    text-align: center;
+    margin: 1rem;
+  }
+  .socialLinks ul {
+    flex-wrap: wrap;
+  }
+  .socialLinks li {
+    flex-direction: row;
+    width: 100%;
+    border: none;
+  }
 }
