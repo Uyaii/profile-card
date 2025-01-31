@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>My Profile Card</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Welcome to My Profile Card</h1>
+      </header>
+      <img
+        src="./assets/profilepic.jpg"
+        alt="profile picture"
+        data-testid="profilePicture"
+        class="profilePicture" />
+      <h1 data-testid="fullName" class="fullname">Maryanne Inyang</h1>
+      <h3 data-testid="jobTitle" class="jobtitle">Full Stack Developer</h3>
+      <p data-testid="shortBio" class="shortBio">
+        Hello everyone, I'm Maryanne, a full stack developer. My birthday is
+        12th September and I'm currently 22 years old.I'm currently an
+        undergraduate at Covenant University studying Information and
+        Communication Engineering. I'm actually a self taught developer who used
+        to hate coding with a passion but after many encounters and experiences
+        I've actually fallen in love with it and dont mind pursuing a career in
+        it
+      </p>
+      <p data-testid="currentLocation" class="currentLocation">
+        Delta State, Nigeria
+      </p>
+
+      <section class="contact-section">
+        <h1>Reach Out To Me!</h1>
+        <p data-testid="emailAddress" class="emailAddress">
+          <a href="mailto:maryanneinyang@gmail.com">Send An Email🥰</a>
+        </p>
+
+        <span data-testid="socialLinks" class="socialLinks">
+          <h3>Social Links:</h3>
+          <ul>
+            <li>
+              <a href="http://instagram/Uyai">
+                <img src="./assets/instagram.png" alt="instagram icon" />
+                Instagram</a
+              >
+            </li>
+            <li>
+              <a href="http://tiktok/Uyai">
+                <img src="./assets/tiktok.png" alt="tiktok icon" />
+
+                Tiktok</a
+              >
+            </li>
+            <li>
+              <a href="http://linkedin/Uyai">
+                <img src="./assets/linkedin.png" alt="linkedIn icon" />
+
+                LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="http://github/Uyai">
+                <img src="./assets/github.png" alt="github icon" />
+
+                GitHub</a
+              >
+            </li>
+            <li>
+              <a href="http://twitter/Uyai">
+                <img src="./assets/x.png" alt="twitter icon" />
+
+                Twitter</a
+              >
+            </li>
+          </ul>
+        </span>
+      </section>
+
+      <footer data-testid="currentTimeUTC" id="utc-time"></footer>
+    </main>
+  </body>
+  <script src="./main.js"></script>
+</html>

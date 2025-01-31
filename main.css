@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Cascadia Code";
+  min-height: 100vh;
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header,
+footer {
+  background-color: rebeccapurple;
+  padding: 1rem;
+  margin: 0;
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(255, 118, 209);
+}
+
+main {
+  max-height: max-content;
+  max-width: min-content;
+  background-color: white;
+  margin: 1.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.profilePicture {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 20px;
+  float: left;
+  margin: 1rem;
+  margin-right: 2rem;
+}
+
+.shortBio,
+.fullname,
+.jobtitle {
+  margin-top: 1rem;
+}
+.contact-section {
+  clear: both;
+  /* border: 2px solid rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.socialLinks {
+  display: block;
+}
+.socialLinks ul {
+  list-style-type: none;
+  display: flex;
+}
+.socialLinks li {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid rebeccapurple;
+}
+.socialLinks img {
+  width: 30px;
+  height: 30px;
+}
+
+.socialLinks a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.socialLinks li:hover {
+  background-color: rebeccapurple;
+
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+.socialLinks a:hover {
+  color: white;
+}
+
+.emailAddress,
+.currentLocation {
+  font-weight: bold;
+}
+
+.emailAddress a {
+  color: rebeccapurple;
+  text-decoration: none;
+  font-size: 25px;
+}
+.emailAddress a:hover {
+  color: lightpink;
+  transform: scale(0.5);
+  transform: scale(2);
+  transition: all 0.5s ease-in;
+}
+
+footer {
+  font-size: 20px;
+}
