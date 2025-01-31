@@ -176,3 +176,31 @@ footer {
     border: none;
   }
 }
+.blog-link h2{
+  margin: 1rem;
+  text-decoration: none;
+  
+}
+.blog-metadata {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.blog-metadata h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-metadata p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.blog-metadata img {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 10px;
+}
